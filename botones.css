@@ -1,0 +1,54 @@
+body{
+    background:#3dd;
+}
+a{
+    width: 500px;
+    margin: auto;
+    background: #4f4f4f;
+    padding:20px;
+    overflow:hidden;
+    box-shadow:0 0 25px #000;
+    margin-top:30px;
+    border:1px solid #4444;
+    text-align: center;
+    display:block;
+    color: #6f6f6f;
+    text-decoration:none;
+    font-weight:bold;
+}
+.wiggle a:hover{
+    animation:wiggle 75ms infinite;
+    animation-timing-function: linear;
+}
+@keyframes wiggle{
+    0% {transform: translate(2px,0); }
+    50% {transform: translate(-2px,0);}
+    100% {transform: translate(2px,0); }
+}
+.shake a:hover{
+    animation:shake 75ms infinite;
+    animation-timing-function: linear;
+}
+@keyframes shake{
+    0% {transform: rotate(.1rad); }
+    50% {transform: rotate(-.1rad);}
+    100% {transform: rotate(.1rad); }
+}
+.pulse a:hover{
+    animation:pulse 75ms infinite;
+    animation-timing-function: linear;
+}
+@keyframes pulse{
+    0% {transform: translate(2px,0); }
+    50% {transform: translate(-2px,0);}
+    100% {transform: translate(2px,0); }
+}
+.zoom a:hover{
+    animation:zoom 75ms infinite;
+    animation-timing-function: linear;
+}
+@keyframes zoom{
+    0% {transform: translate(2px,0); }
+    50% {transform: translate(-2px,0);}
+    100% {transform: translate(2px,0); }
+}
