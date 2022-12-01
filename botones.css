@@ -26,27 +26,24 @@ a{
     100% {transform: translate(2px,0); }
 }
 .shake a:hover{
-    animation:shake 75ms infinite;
+    animation:shake 1ms infinite;
     animation-timing-function: linear;
 }
 @keyframes shake{
-    0% {transform: rotate(.1rad); }
-    50% {transform: rotate(-.1rad);}
-    100% {transform: rotate(.1rad); }
+    0% {transform: rotate(.5rad); }
+    50% {transform: rotate(-.5rad);}
+    100% {transform: rotate(.5rad); }
 }
 .pulse a:hover{
-    animation:pulse 75ms infinite;
+    animation:pulse 800ms infinite;
     animation-timing-function: linear;
 }
 @keyframes pulse{
+   0%{ transform:scale(1);}
+   50%{ transform:scale(1.1);}
    
 }
 .zoom a:hover{
-    animation:zoom 75ms infinite;
-    animation-timing-function: linear;
-}
-@keyframes zoom{
-    0% {max zoom: 1; }
-    50% {min zoom: 1;}
-    100% {max zoom: 1;}
+   transform:scale(1.1);
+   transition: all ease 500ms
 }
