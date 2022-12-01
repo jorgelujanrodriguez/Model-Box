@@ -39,16 +39,14 @@ a{
     animation-timing-function: linear;
 }
 @keyframes pulse{
-    0% {transform: translate(2px,0); }
-    50% {transform: translate(-2px,0);}
-    100% {transform: translate(2px,0); }
+   
 }
 .zoom a:hover{
     animation:zoom 75ms infinite;
     animation-timing-function: linear;
 }
 @keyframes zoom{
-    0% {transform: translate(2px,0); }
-    50% {transform: translate(-2px,0);}
-    100% {transform: translate(2px,0); }
+    0% {max zoom: 1; }
+    50% {min zoom: 1;}
+    100% {max zoom: 1;}
 }
